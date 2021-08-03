@@ -1,6 +1,13 @@
-#Trabajo Practico N°1
+# Trabajo Practico N°1
+## Inteligencia Artificial I
 
-Rejuvenecimiento facial en The Irishman
+#### **Integrantes** : 
+##### *Nombre:* Joel Porpatto  - *Legajo:* 12285
+##### *Nombre:* Agustina Sanchez Lanza - *Legajo:* 11549
+
+### Buscar 2 ejemplos de aplicaciones de inteligencia artificial.
+
+#### **Rejuvenecimiento facial en The Irishman**
 Para convencer a Scorsese de que hacer The Irishman aún era una posibilidad con la mayoría de su elenco principal sobre los 70 años, se desarrollaron cámaras especiales para capturar el trabajo de De Niro, Pacino y Pesci tratando de entorpecer al mínimo la puesta en escena y filmación de la película. 
 Por ello el equipo de Industrial Light & Magic (Star Wars, Titanic, Jurassic Park, Harry Potter, Piratas del Caribe, Avengers) tuvo que conquistar al director con una tecnología de efectos visuales de rejuvenecimiento que nunca se había hecho antes. 
 Scorsese no quería que los famosos actores tuvieran que desarrollar su trabajo en la película con "pelotas de golf" en sus rostros. Es decir, con los típicos puntos e implementos de captura de movimiento que usan la mayoría de las producciones para dar forma a sus efectos visuales más importantes.
@@ -8,4 +15,6 @@ Principalmente existían dos tecnologías para rejuvenecer a los actores. La pri
 Así que ILM se puso a desarrollar un nuevo sistema compuesto de un conjunto de cámaras llamada “el monstruo de las tres cabezas”, y un software de procesado de imágenes llamado Flux.
 En el centro se coloca una cámara de producción en 8k, a los costados dos cámaras que registran luz infrarroja y cada secuencia de datos se envía por cada fotograma. El actor en su cara tiene una malla que se deforma (modelo geométrico) y se corrige en post producción. 
 Entre las principales ventajas de este nuevo sistema creado por ILM es que no es intrusivo, y se puede usar para planos cercanos donde capturar la actuación es importante, a diferencia de otros sistemas de rejuvenecimiento usados hasta el momento donde el énfasis está en la acción.
+Es conveniente ver, para un mayor entendimiento, el video oficial “How The Irishman’s Groundbreaking VFX Took Anti-Aging To the Next Level | Netflix” en el siguiente link: https://www.youtube.com/watch?v=OF-lElIlZM0.
+
 

@@ -17,4 +17,42 @@ En el centro se coloca una cámara de producción en 8k, a los costados dos cám
 Entre las principales ventajas de este nuevo sistema creado por ILM es que no es intrusivo, y se puede usar para planos cercanos donde capturar la actuación es importante, a diferencia de otros sistemas de rejuvenecimiento usados hasta el momento donde el énfasis está en la acción.
 Es conveniente ver, para un mayor entendimiento, el video oficial “How The Irishman’s Groundbreaking VFX Took Anti-Aging To the Next Level | Netflix” en el siguiente link: https://www.youtube.com/watch?v=OF-lElIlZM0.
 
+#### **Rejuvenecimiento facial en The Irishman**
+
+La inteligencia artificial es capaz de diagnosticar enfermedades como lo hacen los médicos pero mucho más rápido.Esta tiene muchas ventajas que van desde la optimización de funciones hasta la mejora de servicios con una gran reducción de costos.
+La inteligencia artificial en el ámbito médico , tiene la ventaja de dar diagnosticos rapidos ,ya que por ejemplo en países como EEUU donde existen los recursos médicos necesarios, el actual sistema de diagnóstico es muy lento y pueden pasar meses desde que la persona va a consultar al médico de cabecera por primera vez hasta que es derivado al especialista adecuado que le proporciona el tratamiento que necesita, en ese retraso puede comprometer el resultado , la enfermedad puede escalar a diagnósticos mucho mas complejos , que si son detectados a tiempo , se podrían evitar. 
+
+Científicos de EEUU y china han desarrollado un algoritmo que utiliza big data y “machine learning” o aprendizaje automático, este es un método analítico de la inteligencia artificial, que permite que un sistema, por sí mismo ,sin intervención humana y en forma automatizada, aprenda a descubrir patrones, tendencias y relaciones en los datos, y gracias a dicho conocimiento, en cada interacción con información nueva se ofrecen mejores perspectivas.
+
+El algoritmo es capaz de identificar 2 enfermedades graves de la retina(degeneración macular y edema macular diabético) , que de no ser detectadas a tiempo podrían producir ceguera, el algoritmo además de dar un diagnóstico con 90% de certeza , valora la gravedad de cada caso y recomienda el tratamiento más adecuado. 
+Los investigadores también han aplicado esta herramienta para diagnosticar neumonía y han demostrado que la inteligencia artificial es capaz de distinguir entre las infecciones pulmonares provocadas por bacterias, que requieren tratamiento con antibiótico de inmediato, y las causadas por virus.
+La inteligencia artificial también es utilizada para mejorar la detección temprana del cáncer de mamas en el Instituto de Tecnología de Massachussetts.
+
+Los sistemas de aprendizaje automático se basan en modelos de redes neuronales: imitan la forma en que las células nerviosas se conectan en nuestro cerebro.Consisten en entrenar al sistema de inteligencia artificial enseñándole millones de imágenes y éste aprende a partir de los ejemplos. No obstante, esta forma de aprendizaje hace que el proceso sea muy costoso, sin embargo los científicos de este estudio lograron revertir esto, aplicando otra técnica de la inteligencia artificial llamada aprendizaje de transferencia, que permite al sistema aprender a partir de un conjunto de datos más pequeño, básicamente se utiliza una arquitectura base ya entrenada , para realizar el proceso es decir se transfiere el conocimiento acumulado , para solucionar nuevos problemas , por ejemplo, si la IA está optimizada para reconocer por separado las partes del ojo, como la retina, la córnea o el nervio óptico, es capaz de forma más eficiente y rápida de identificarlas y evaluarlas examinando imágenes del ojo entero.
+
+La inteligencia artificial no va a reemplazar al equipo médico , pero si va a ser un potente elemento más para complementar a la hora de tomar una decisión o dar un diagnóstico correcto.
+
+### ¿Qué se entiende por inteligencia artificial ?
+
+Inteligencia artificial para nosotros es una disciplina que trata de crear sistemas capaces de aprender y razonar como el ser humano , con la capacidad de adaptarse a cualquier contexto en una escala de tiempo record , es decir esta compuesta de algoritmos que aprenden y procesan flujos de datos extensos y complejos en tiempos muy cortos. 
+
+### ¿Qué se entiende por inteligencia ?
+
+Entendemos por inteligencia como la habilidad para adquirir conocimientos, pensar ,razonar con eficacia ,resolver problemas y manejarse en el entorno de modo adaptativo. Existen distintos tipos de inteligencia: musical ,espacial , lógico-matemática,lingüística, corporal-kinestésica,interpersonal,intrapersonal,naturalista.
+Deducimos en base a lecturas de articulos web , que la persona más inteligente:
+- Es más capaz de adaptarse al ambiente físico y social.
+- Es más hábil para seleccionar ambientes en los cuales pueda funcionar mejor.
+- Es más capaz de modificar su ambiente para que encaje mejor en sus potencialidades.
+- Es más capaz de enfrentar situaciones novedosas e inesperadas.
+
+Esquematizando podemos decir que la inteligencia necesita de tres elementos:
+- la capacidad de adquirir conocimientos
+- los conocimientos adquiridos
+- y el uso que hacemos de ellos.
+
+###  ¿Qué se entiende por artificial ?
+
+Entendemos por artificial como cualquier cosa hecha con intención y propósito, teniendo la capacidad de modificar su entorno para ello. Este propósito es para obtener un beneficio,esto significa que no solo el ser humano, sino otros seres vivos, producen lo que se pueda llamar artificial. Como algunos ejemplos, colmenas de las abejas, galerías de las hormigas, nidos de los pájaros, estructuras de las termitas, cuevas de los conejos, etc.
+
+
 

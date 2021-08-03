@@ -1,3 +1,5 @@
+#Trabajo Practico N°1
+
 Rejuvenecimiento facial en The Irishman
 Para convencer a Scorsese de que hacer The Irishman aún era una posibilidad con la mayoría de su elenco principal sobre los 70 años, se desarrollaron cámaras especiales para capturar el trabajo de De Niro, Pacino y Pesci tratando de entorpecer al mínimo la puesta en escena y filmación de la película. 
 Por ello el equipo de Industrial Light & Magic (Star Wars, Titanic, Jurassic Park, Harry Potter, Piratas del Caribe, Avengers) tuvo que conquistar al director con una tecnología de efectos visuales de rejuvenecimiento que nunca se había hecho antes. 

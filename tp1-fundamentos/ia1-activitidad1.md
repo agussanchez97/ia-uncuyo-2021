@@ -35,6 +35,7 @@ La inteligencia artificial no va a reemplazar al equipo médico , pero si va a s
 ### ¿Qué se entiende por inteligencia artificial ?
 
 Inteligencia artificial para nosotros es una disciplina que trata de crear sistemas capaces de aprender y razonar como el ser humano , con la capacidad de adaptarse a cualquier contexto en una escala de tiempo record , es decir esta compuesta de algoritmos que aprenden y procesan flujos de datos extensos y complejos en tiempos muy cortos.
+![intelenciartifical](https://user-images.githubusercontent.com/82063987/128251828-d5d0a7a8-7c88-4124-b991-4872cbe54c30.jpg)
 
 
 ### ¿Qué se entiende por inteligencia ?

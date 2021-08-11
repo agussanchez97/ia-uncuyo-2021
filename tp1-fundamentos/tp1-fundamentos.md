@@ -5,7 +5,10 @@
 
 ### Inteligencia Artificial
 
-#### Inteligencia Artificial Debil
+
+### SECCIÓN A
+
+#### Inteligencia Artificial Débil
 
 La inteligencia artificial debil se sostiene bajo la hipotesis de si "es posible que las máquinas actúen con inteligencia" , por esto filosofos se preguntan si las maquinas 
 pueden pensar y de ser asi cúal es la diferencia con el ser humano, es decir intentan comparar la arquitectura humana y la de la maquina . Debido a que estas preguntas no 
@@ -109,4 +112,11 @@ Vernor Vinge profesor de matematicas y autor de ciencia ficcion , escribió que,
 Ray Kurzweil, en The Age of Spiritual Machines (2000) predice que hacia el año 2099 existirá «una fuerte tendencia hacia una fusión del pensamiento humano en el mundo de
 la inteligencia de la máquina que las especies humanas crearon inicialmente. Ya no existe una distinción clara entre los hombres y los computadores». Existe incluso una palabra nueva, trashumanismo, que se refiere al movimiento social real que ansía este futuro. Basta con decir que estos temas presentan un reto para la mayoría de los teóricos que consideran la preservación de la vida humana y de las especies como algo bueno
 
+### SECCIÓN B
+![TP1-IA](https://user-images.githubusercontent.com/82063987/129080785-f08462ad-9742-4725-a17e-ea4d4d7f735d.png)
 
+### SECCIÓN C
+
+Mi pensamiento puramente personal ante todo lo leído anterior es que las maquinas en la actualidad no tienen conciencia , ni tiene el poder de pensar por si solas , simplemente
+lo hacen gracias al ser humano , sin embargo no descarto que en un futuro no tan lejano surja la explosion de inteligencia y los creadores de los nuevos computadores sean otros maquinas creadas anteriormente por el humano , sin embargo no considero el punto de que será el fin de la raza humana , pienso que las nuevas tecnologias serán un recurso más para el humano y serán de gran ayuda para todas las areás.
+Con respecto a la inteligencia real o simulación de inteligencia tengo un gran dilema de pensamientos , ya que no considero que en algún momento una computadora pueda tener inteligencia real , por una cuestion de que las computadoras aprenden gracias al ser humano , entonces considero que siempre van a estar imitando o simulando el cerebro humano , no pensando por si solas . Otro aspecto que me cuesta pensar es como una computadora podría tener sentimientos de deseo , amor , etc , no creo que eso pueda ser posible en algún momento ya que no dejan de ser mentes artificiales, no creo que puedan desarrollar sentimientos en algún momento pero no descarto la idea. 

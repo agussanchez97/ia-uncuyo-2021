@@ -16,7 +16,7 @@ mensajes escritos en línea, online) con un interrogador (interlocutor). Éste t
 persona; si el programa engaña al interlocutor un 30 por ciento del tiempo, este pasará la prueba.
 A demás de este test, Turing examinó una gran gama de posibles objeciones ante la posibilidad de las máquinas inteligentes, algunas de ellas son:
 
-##### Argumento de Incapacidad.
+##### -Argumento de Incapacidad.
 
 Este argumento afirma que una maquina nunca puede hacer X y Turing define como X las siguiente acciones : Ser amable, tener recursos, ser guapo, simpático, tener iniciativas, 
 tener sentido del humor, distinguir lo correcto de lo erróneo, cometer errores, enamorarse, disfrutar con las fresas con nata, hacer que otra persona también se enamore,aprender 
@@ -30,14 +30,14 @@ predicen mejor que los expertos. Desde el año 1999, el Educational Testing Serv
 de preguntas de redacciones en el examen GMAT. Sin embargo también es cierto, que existen todavía muchas tareas en donde las computadoras no sobresalen, incluida la tarea de 
 Turing de mantener una conversación abierta.
 
-##### La objeción matemática.
+##### -La objeción matemática.
 
 Turing y Godel a traves de trabajos afirman que ciertas cuestiones matemáticas, en principio, no pueden ser respondidas por sistemas formales concretos. El teorema de la 
 incompletitud de Gödel es el ejemplo más conocido. Filósofos como J. R. Lucas (1961) han afirmado que este teorema demuestra que las máquinas son mentalmente inferiores a los 
 hombres, porque las máquinas son sistemas formales limitados por el teorema de la incompletitud, es decir no pueden establecer la verdad de su propia sentencia Gödel, mientras 
 que los hombres no tienen dicha limitación.
 
-##### El argumento de la informalidad.
+##### -El argumento de la informalidad.
 Turing mediante su «argumento de la informalidad del comportamiento» afirma que el comportamiento humano es demasiado complejo para poder captarse mediante un simple juego 
 de reglas y que debido a que las computadoras solo siguen un conjunto (juego) de reglas, no pueden generar un comportamiento tan inteligente como el de los hombres. En IA la 
 incapacidad de capturarlo todo en un conjunto de reglas lógicas se denomina **problema de cualificación**.
@@ -61,5 +61,13 @@ Otros se centran en la intencionalidad, esto es, en la cuestión de si las creen
 mundo real. Gracias a esto Turing se plantea si las maquinas pueden pensar realmente y plantea que en la vida cotidiana no tenemos la una evidencia directa sobre los
 estados mentales internos de otras personas, sin embargo Turing reconoce que la cuestión de la conciencia (consciencia) es difícil, pero niega que sea relevante para la práctica
 de la IA. Por otro lado , para otros filosofos el tema si es importante , por ejemplo en 1848, Frederick Wöhler sintetizó urea artificial por primera vez. Este fue un hecho
-importante porque probó que la química orgánica y la inorgánica se podían unir, cuestión discutida muy fuertemente. Una vez que se consiguió la síntesis, los químicos reconocieron que la urea artificial era urea, porque tenía todas las propiedades físicas
-adecuadas. Igualmente, los edulcorantes artificiales son innegablemente edulcorantes,y la inseminación artificial (la otra IA) es innegablemente inseminación,por lo tanyo
+importante porque probó que la química orgánica y la inorgánica se podían unir, cuestión discutida muy fuertemente. Una vez que se consiguió la síntesis, los químicos reconocieron que la urea artificial era urea, porque tenía todas las propiedades físicas adecuadas. Igualmente, los edulcorantes artificiales son innegablemente edulcorantes,y la inseminación artificial (la otra IA) es innegablemente inseminación. Concluimos diciendo que estas diferencias parecen ser una cuestión de convención. Sin embargo para las mentes artificiales, no existe las convenciónes. Entonces para responder si los procesos mentales son parecidos a las maquinas y al pensamiento de las maquinas , decimpos que dependera de la Teoria de los estados y de los procesos mentales.
+
+##### -Teoria del Funcionalismo.
+
+Dice que un estado mental es cualquier condición causal inmediata entre la entrada y la salida. Bajo la teoría funcionalista, dos sistemas con procesos causales que se corresponden tendrían los mismos estados mentales. Por lo tanto, un programa informático podría tener los mismos estados mentales que una persona. 
+
+#### -Teoria del Naturalismo Biologico.
+
+Dice que los estados mentales son características emergentes de alto nivel originadas por procesos neurológicos de bajo
+nivel en las neuronas. Así pues, los estados mentales no se pueden duplicar justo en la base de algún programa que tiene la misma estructura funcional con el mismo comportamiento de entrada y salida; necesitaríamos que el programa se ejecutara en una arquitectura con la misma potencia causal que las neuronas y esto no es posible.

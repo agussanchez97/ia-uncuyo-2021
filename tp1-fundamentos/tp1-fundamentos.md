@@ -96,9 +96,9 @@ han tenido efectos negativos no intencionados: el motor de combustión trajo la 
 en el trabajo, qué proyectos deberían o no deberían hacer, cómo los deberían abordar.
 Sin embargo, la IA parece que expone problemas nuevos yendo más allá de, por ejemplo, construir puentes que no se desmoronen:
 
-• Las personas podrían perder sus trabajos por la automatización.
-• Las personas podrían tener demasiado (o muy poco) tiempo de ocio.
-• Las personas podrían perder el sentido de ser únicos.
-• Las personas podrían perder algunos de sus derechos privados.
-• La utilización de los sistemas de IA podría llevar a la pérdida de responsabilidad.
-• El éxito de la IA podría significar el fin de la raza humana.
+- Las personas podrían perder sus trabajos por la automatización.
+- Las personas podrían tener demasiado (o muy poco) tiempo de ocio.
+- Las personas podrían perder el sentido de ser únicos.
+- Las personas podrían perder algunos de sus derechos privados.
+- La utilización de los sistemas de IA podría llevar a la pérdida de responsabilidad.
+- El éxito de la IA podría significar el fin de la raza humana.

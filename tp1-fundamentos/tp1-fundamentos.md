@@ -71,3 +71,8 @@ Dice que un estado mental es cualquier condición causal inmediata entre la entr
 
 Dice que los estados mentales son características emergentes de alto nivel originadas por procesos neurológicos de bajo
 nivel en las neuronas. Así pues, los estados mentales no se pueden duplicar justo en la base de algún programa que tiene la misma estructura funcional con el mismo comportamiento de entrada y salida; necesitaríamos que el programa se ejecutara en una arquitectura con la misma potencia causal que las neuronas y esto no es posible.
+
+#### -Problema mente-cuerpo.
+
+Para poder explicar estas 2 Teorias , desglosamos el problema pero como arquitectura-mente para permitirnos relacionarlo con las maquinas.
+Este problema es abordado por la **Teoria Dualista** , creada por Descartes que nos dice que diciendo que el alma y el cuerpo son dos tipos de cosas diferentes , y la **Teoria Monista** o **Materialismo**, mantiene que no existen cosas tales como almas inmateriales, sino sólo objetos materiales.Como consecuencia, los estados mentales, tales como sentir dolor,saber que alguien está montando a caballo, etc son estados del cerebro. John Searl,resume esta idea con el slogan, *«Los cerebros producen las mentes».* Esta ultima teoria , se enfrenta con 2 problemas *Libertad de elección* , es decir como una mente construida por las leyes de la fisica conserva el poder de elegir pero entonces debemos cuestionarnos que es la libre elección para nosotros , el segundo problema es la conciencia y trata de explicar por sentimos algo en ciertos estados mentales y en otros nada.

@@ -88,9 +88,26 @@ extenso»** , donde el observador mira la situación desde afuera y puede distin
 ##### El experimento de la prótesis cerebral.
 
 
+Trata de lo siguiente: suponga que la neurofisiología ha evolucionado hasta tal punto que el comportamiento y las conexiones de entrada y salida de todas las neuronas del cerebro humano se entienden perfectamente. Además, suponga que podemos construir mecanismos electrónicos microscópicos que imitan este comportamiento y que pueden interconectarse con el tejido neuronal. Y finalmente, suponga que una técnica quirúrgica milagrosa puede sustituir las neuronas individuales con los mecanismos electrónicos sin interrumpir el
+funcionamiento del cerebro por completo. El experimento consiste en sustituir gradualmente todas las neuronas de la cabeza de alguien con mecanismos electrónicos y a continuación invertir el proceso para retornar al sujeto a su estado biológico normal.
+Debemos pensar tanto en el comportamiento externo como la experiencia interna del sujeto, durante y después de la operación. Por definición del experimento, el comportamiento externo del sujeto no debe sufrir ningún cambio en comparación con lo que se observaría si la operación no se llevase a cabo.Rl sujeto del experimento debería por lo menos poder registrar cualquier cambio en su propia experiencia consciente. Aparentemente existe una confrontación directa de intuiciones de lo que podría llegar a ocurrir.
+Sin embargo, podemos hacer algo más que argumentar, a partir de la intuición. En primer lugar, hay que destacar que para que el comportamiento externo siga siendo el mismo, mientras que el individuo se va sumiendo gradualmente en la inconsciencia, debe darse el caso de que la propia voluntad del sujeto se elimine instantáneamente y totalmente.
+En segundo lugar, examinemos qué ocurre si formulamos al sujeto cuestiones relacionadas con su experiencia consciente durante el período en donde no existen neuronas reales.Debido a que hemos duplicado las propiedades funcionales de un cerebro humano normal, supondremos que el cerebro electrónico no contiene dichas artimañas. Debemos entonces tener una explicación de las manifestaciones de la consciencia producidas por el cerebro electrónico que atañe sólo a las propiedades funcionales de las neuronas. entonces que existen sólo dos conclusiones posibles:
+ - Los mecanismos causales de la consciencia que generan estas clases de salidas en los cerebros normales todavía están funcionando en la versión electrónica, que por tanto, es consciente.
+ - Los sucesos mentales conscientes en el cerebro normal no tienen conexión causal con el comportamiento, y quedan fuera del cerebro electrónico, que no es, por tanto, consciente.
+En tercer lugar, examinemos la situación en que la operación se ha invertido y el sujeto tiene un cerebro normal. Una vez más, el comportamiento externo del sujeto debe
+ser, por definición, como si la operación no hubiera ocurrido. 
+El sujeto debe tener recuerdos precisos de la naturaleza real de sus experiencias conscientes, incluyendo las qualia, a pesar del hecho de que según Searle no ha habido
+tales experiencias.Para tratar esta eventualidad, necesitamos asegurarnos de que el estado de las neuronas se actualiza para reflejar el estado interno de las neuronas artificiales que están reemplazando. Si los supuestos aspectos «no funcionales» de las neuronas reales dan como resultado entonces un comportamiento funcionalmente diferente del que se observa con las neuronas artificiales todavía en su lugar,tenemos un reductio ad absurdum simple, debido a que eso significaría que las neuronas artificiales no son equivalentes funcionalmente a las neuronas reales. 
+
 
 ##### El experimento de la habitacion China.
-
+Este se debe a John Searle (1980), quien describe un sistema hipotético que claramente está ejecutando un programa y que pasa la prueba de Turing, pero que igualmente y de manera clara no entiende ninguna entrada ni salida. Su conclusión es que ejecutar el programa adecuado no es una condición suficiente para ser una mente.
+El sistema se compone de un hombre, que solamente entiende inglés, y que está equipado con un libro de reglas escrito en inglés y varias pilas de papel, algunas en blanco
+y algunas con inscripciones indescifrables.
+El sistema se encuentra dentro de una habitación con una apertura al exterior. A través de la apertura se van deslizando los papeles con símbolos indescifrables. El hombre encuentra los símbolos correspondientes en el libro de reglas y sigue las instrucciones. Las instrucciones pueden incluir escritura de símbolos en los papeles nuevos que van saliendo, encontrar símbolos en las pilas de papeles, reorganizar las pilas, etc. Finalmente las instrucciones harán que un símbolo o más sean transcritos a un trozo de papel que se pasa otra vez al mundo exterior.
+Searle argumenta lo siguiente: la persona que está en la habitación no entiende el chino (supuestamente). El libro de reglas y las pilas de papel, que son sólo trozos de
+papel no entienden el chino. Por consiguiente no está habiendo comprensión del chino. De aquí que, según dice Searle, ejecutar el programa adecuado no genera necesariamente entendimiento.
 
 #### La ética y los riesgos de desarrollar la Inteligencia Artificial.
 

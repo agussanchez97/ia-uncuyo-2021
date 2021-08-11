@@ -81,3 +81,24 @@ Este problema es abordado por la **Teoria Dualista** , creada por Descartes que 
 
 Este experimiento consta de imaginar que al nacer , sacan el su cerebro de su cuerpo y lo colocan en una cubeta conectado a un simulador informatico que pertenece a un mundo totalmente ficticio , pero dentro del cerebro usted tiene el estado mental de mueroPor(Yo , Hamburguesa) , a pesar de que su cerebro no esta en su cuerpo por ende no puede sentir hambre , es el mismo estado que si estuviera dentro del cuerpo , o son estados distintos , para responder esto existen 2 visiones , una de ella es ,**La visión del «contenido
 extenso»** , donde el observador mira la situación desde afuera y puede distinguir las diferencias del mundo real , de las ficticias por ende los estados son distintos. Otra vision es **contenido estrecho** sólo tiene en cuenta el punto de vista subjetivo interno, y bajo este punto de vista todas las creencias serían las mismas.
+
+##### El experimento de la prótesis cerebral.
+
+
+
+##### El experimento de la habitacion China.
+
+
+#### La ética y los riesgos de desarrollar la Inteligencia Artificial.
+
+Hasta el momento solo nos hemos focalizado en si se puede desarrollar IA pero no en los riesgos que puede traer , si miramos un poquito para atras muchas de las nuevas tecnologías
+han tenido efectos negativos no intencionados: el motor de combustión trajo la polución ambiental y la pavimentación del paraíso; la fisión nuclear produjo el desastre de Chernobyl, la Isla de las Tres Millas y la amenaza de la destrucción mundial.Todos los científicos e ingenieros se enfrentan a consideraciones éticas de cómo deberían actuar
+en el trabajo, qué proyectos deberían o no deberían hacer, cómo los deberían abordar.
+Sin embargo, la IA parece que expone problemas nuevos yendo más allá de, por ejemplo, construir puentes que no se desmoronen:
+
+• Las personas podrían perder sus trabajos por la automatización.
+• Las personas podrían tener demasiado (o muy poco) tiempo de ocio.
+• Las personas podrían perder el sentido de ser únicos.
+• Las personas podrían perder algunos de sus derechos privados.
+• La utilización de los sistemas de IA podría llevar a la pérdida de responsabilidad.
+• El éxito de la IA podría significar el fin de la raza humana.

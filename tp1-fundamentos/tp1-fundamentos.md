@@ -97,6 +97,7 @@ En segundo lugar, examinemos qué ocurre si formulamos al sujeto cuestiones rela
  - Los sucesos mentales conscientes en el cerebro normal no tienen conexión causal con el comportamiento, y quedan fuera del cerebro electrónico, que no es, por tanto, consciente.
 En tercer lugar, examinemos la situación en que la operación se ha invertido y el sujeto tiene un cerebro normal. Una vez más, el comportamiento externo del sujeto debe
 ser, por definición, como si la operación no hubiera ocurrido. 
+
 El sujeto debe tener recuerdos precisos de la naturaleza real de sus experiencias conscientes, incluyendo las qualia, a pesar del hecho de que según Searle no ha habido
 tales experiencias.Para tratar esta eventualidad, necesitamos asegurarnos de que el estado de las neuronas se actualiza para reflejar el estado interno de las neuronas artificiales que están reemplazando. Si los supuestos aspectos «no funcionales» de las neuronas reales dan como resultado entonces un comportamiento funcionalmente diferente del que se observa con las neuronas artificiales todavía en su lugar,tenemos un reductio ad absurdum simple, debido a que eso significaría que las neuronas artificiales no son equivalentes funcionalmente a las neuronas reales. 
 

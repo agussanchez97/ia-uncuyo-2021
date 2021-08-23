@@ -1,19 +1,24 @@
 import enviroment
 import random
 
+#0 limpio
+#1 sucio
+#2 aspiradora
 class Agent:           
   def __init__(self,env): #recibe como parámetro un objeto de la clase Environment
     self.env=env
-    self.posX=env.init_posX
-    self.posY=env.init_posY
+    self.posX=env.init_posX #poscion ACTUAL del agente en X
+    self.posY=env.init_posY #posicion ACTUAL del agente en Y
     self.think(env)
 
-
+#acciones del aspirador
   def arriba(self):
     pos = self.env.accept_actions("arriba",self.posX,self.posY)
     if pos == True :
+      #llena matriz de posicion Aspiradora
       self.env.matrizP[self.posX][self.posY]= 0
       self.posX = self.posX - 1
+      #llena matriz de entorno
       self.env.matrizP[self.posX][self.posY]= 2
       return True
     return False
@@ -51,7 +56,7 @@ class Agent:
   def idle(self): # no hace nada
     self.env.accept_actions("nada",self.posX,self.posY)
 
-  def think(self,env): # implementa las acciones a seguir por el agente
+  def think(self,env): # implementa las acciones a seguir por el agente 
     print("Comienzo: ")
     print("Entorno creado: ")
     print(" ")
@@ -62,6 +67,7 @@ class Agent:
     self.env.print_environmentM()
 
     print("............................................")
+    #en este bucle consulta si la posicion de la aspiradora esta sucia o limpia , si esta sucia la limpia y recien ahi pasa a la siguiente accion , se repite para los 1000 pasos
     while (self.env.paso < 1000):
       print("Aspiradora esta en la posicion X=", self.posX , "Y=", self.posY,".")
       if(self.env.matriz[self.posX][self.posY] == 1):
@@ -131,5 +137,6 @@ class Agent:
           print("Movimiento invalido- No se puede ir a izquierda desde la posicion X=",self.posX,"Y=",self.posY)
           print("------------------------------")
     print("la CANTIDAD DE PUNTO DE LA ASPIRADORA ES: ",self.env.point)
+    #calculo de desempeño
     print("El desempeño de la aspiradora en entorno de ",self.env.sizeX,"x",self.env.sizeY," con porcentaje de suciedad en el ambiente de ",self.env.dirt_rate ,"% es:" , self.env.get_performance())   
 

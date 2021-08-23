@@ -1,6 +1,8 @@
 import enviroment
 import random
 
+#esta clase es igual a la clase agente , solo que en la funcion think(self) en vez de preguntar en todas las celdas si estan limpias o sucias , elige una accion aleatoria y 
+# de acuerdo a eso es lo que va a realizar el agente.
 class Agent:           
   def __init__(self,env): #recibe como parámetro un objeto de la clase Environment
     self.env=env

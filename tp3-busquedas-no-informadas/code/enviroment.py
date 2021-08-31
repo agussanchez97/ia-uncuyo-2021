@@ -10,7 +10,7 @@ class Enviroment:
   # 3  posicion final
   paso = 0
   point = 0
-
+  #constructor del entorno
   def __init__ (self,sizeX,sizeY,init_posX,init_posY,finalX,finalY,obstaculos):
     self.sizeX = sizeX
     self.sizeY = sizeY
@@ -22,7 +22,7 @@ class Enviroment:
     self.finalY=finalY
     self.obstaculos = obstaculos
 
-
+#bucle q genera el los obstaculos del entorno de forma aleatoria
     cleanAmountSlot=0
     while (cleanAmountSlot < self.obstaculos):
       i = random.randint(0,sizeX-1)
@@ -41,6 +41,7 @@ class Enviroment:
         print("|",int(self.matriz[a][b]),end=' ')
       print("|")
 
+  #busca un nodo en una lista
   def search(self,LinkedList,Node):
 
     for i in range(0,len(LinkedList)):
@@ -84,6 +85,7 @@ class Enviroment:
         i= i+1     
       print("]")
   
+  #busca el nodo de mayor prioridad
   def popPriority(self,linkedlist):
     max=0
 

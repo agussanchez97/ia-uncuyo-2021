@@ -17,8 +17,8 @@ class Agent:
 
   def BFS(self):
     self.env.print_environment()
-    movimientox=[1,-1,0,0] # movimiento izquierda - derecha
-    movimientoy=[0,0,-1,1] # moviento arriba - abajo
+    movimientox=[1,-1,0,0] #moviento arriba - abajo 
+    movimientoy=[0,0,-1,1] # movimiento izquierda - derecha
     inicial = (self.posX,self.posY) # estado inicial del agente
     cola =[] # frontera
     cola.append(inicial) # es una pila de estados 

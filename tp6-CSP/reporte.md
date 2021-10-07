@@ -34,10 +34,16 @@ Cuando analiza arco (SA-V) si V = A , se detecta inconsistencia ya que uno de lo
 
 #### 3) Cuál es la complejidad en el peor caso cuando se ejecuta AC-3 en un árbol estructurado CSP. (i.e. Cuando el grafo de restricciones forma un árbol: cualquiera dos variables están relacionadas por a lo sumo un camino).
 
-La complejidad de la comprobación de consistencia de arco puede analizarse como sigue: un PSR binario tiene a lo más O(n2 ) arcos; cada arco (Xk, Xi ) puede insertarse en la agenda sólo d veces, porque Xi tiene a lo más d valores para suprimir; la comprobación de la consistencia de un arco puede hacerse en O(d2 ) veces; entonces el tiempo total, en el caso peor, es O(n2 d3 ).
+La complejidad de la comprobación de consistencia de arco puede analizarse como sigue: un PSR binario tiene a lo más O(n^2 ) arcos; cada arco (Xk, Xi ) puede insertarse en la agenda sólo d veces, porque Xi tiene a lo más d valores para suprimir; la comprobación de la consistencia de un arco puede hacerse en O(d^2 ) veces; entonces el tiempo total, en el caso peor, es O(n^2 d^3 ).
 
 
-#### 4) AC-3 coloca de nuevo en la cola todo arco ( Xk, Xi) cuando cualquier valor es removido del dominio de Xi incluso si cada valor de Xk es consistente con los valores restantes de Xi. Si por cada arco ( Xk,Xi) se lleva cuenta del número de valores que quedan de Xi que sean consistentes con Xk . Explicar como actualizar ese número de manera eficiente y demostrar que la arco consistencia puede lograrse en un tiempo total O(n2d2 )
+#### 4) AC-3 coloca de nuevo en la cola todo arco ( Xk, Xi) cuando cualquier valor es removido del dominio de Xi incluso si cada valor de Xk es consistente con los valores restantes de Xi. Si por cada arco ( Xk,Xi) se lleva cuenta del número de valores que quedan de Xi que sean consistentes con Xk . Explicar como actualizar ese número de manera eficiente y demostrar que la arco consistencia puede lograrse en un tiempo total O(n^2d^2 )
+El algoritmo AC-4 tiene complejidad O(n^2d^2) , lo que hace es plantear el algoritmo como un arbol de forma tal que no tenga que realizar backtraking
+PSR estructurado por árbol puede resolverse en tiempo lineal en el número de variables. El algoritmo tiene los siguientes pasos:
+1. Elijir cualquier variable como la raíz del árbol, y ordene las variables desde la raíz a las hojas de tal modo que el padre de cada nodo en el árbol lo precede
+en el ordenamiento. Etiquetar las variables X1…, Xn en orden. Ahora, cada variable excepto la raíz tiene exactamente una variable padre.
+2. Para j desde n hasta 2, aplicar la consistencia de arco al arco (Xi, Xj), donde Xi es el padre de Xj, quitando los valores del DOMINIO[Xi] que sea necesario.
+3. Para j desde 1 a n, asigne cualquier valor para Xj consistente con el valor asignado para Xi, donde Xi es el padre de Xj.
 
 #### 5) Demostrar la correctitud del algoritmo CSP para  árboles estructurados (sección 5.4, p. 172 AIMA 2da edición). Para ello, demostrar: 
 #### A)Que para un CSP cuyo grafo de restricciones es un árbol, 2-consistencia (consistencia de arco) implica n-consistencia (siendo n número total de variables)
@@ -50,12 +56,14 @@ La complejidad de la comprobación de consistencia de arco puede analizarse como
 ##### c)En cada variante, calcular los tiempos de ejecución para los casos de 4, 8, 10, 12 y 15 reinas.
 
 ######  Backtraking cronologico :
-
+	Tener en cuenta que el algoritmo muestra todos las soluciones posibles.
 ######  4-Reinas: 738.058ms
 ######  8-Reinas: 551.983ms
 ######  10-Reinas: 617.011ms
 ######  12-Reinas: 776.045ms
 ######  15-Reinas:
+
+
           
 ##### d)En cada variante, calcular la cantidad de estados recorridos antes de llegar a la solución para los casos de 4, 8, 10, 12 y 15 reinas.
 ##### e)Realizar un gráfico de cajas para los puntos c y d.

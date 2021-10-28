@@ -30,7 +30,10 @@ circ_tronco_cm` > 200 & `circ_tronco_cm` <= 300 entonces 'alto' si no caso contr
 
 ##### 3-Colocar un archivo con el nombre tp7-classificadores.md que contenga:
 ##### a- La matriz de confusión para el clasificador aleatorio y las métricas correspondientes. (tabla)
-     Valor Predicho
-     SI    NO
- SI  379  336
- NO  2820 2846
+     
+![image](https://user-images.githubusercontent.com/82063987/139277409-1d3be0c9-5b97-4847-a69a-ca27572c4b57.png)
+
+##### b-La matriz de confusión para el clasificador por clase mayoritaria y las métricas correspondientes. (tabla)
+![image](https://user-images.githubusercontent.com/82063987/139277920-9f860d49-8efd-4303-bd15-fd7322c2e944.png)
+
+

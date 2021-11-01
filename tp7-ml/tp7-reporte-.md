@@ -9,4 +9,13 @@ utilice algoritmo de Random Forest con 600 arboles.
 ### Resultados obtenidos sobre el conjunto de validación
 
 
+### Resultados obtenidos en Kaggle
+
+0.685
+
+### Descripción detallada del algoritmo propuesto
+
+Lo primero que realizamos es el 
+
+
 

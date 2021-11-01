@@ -1,6 +1,8 @@
 ### Trabajo Final Inteligencia Artificial I 
 
-#### Tema : Diagnostico de personas que padecen Cancer
+#### TITULO : ALGORITMOS DE CLASIFICACIÓN PARA INFORMACIÓN GENETICA.
+
+##### Codigo: ACLASIGEN
 
 ###### Alumna: Sanchez Lanza Agustina
 ###### Legajo: 11549
@@ -27,17 +29,27 @@ Considero que este problema se puede solucionar con inteligencia articial , ya q
 
 ###### Estimación de tiempo:
 
-30 dias 
+22 dias 
 
 ###### Cronograma de Actividades:
 
-- Estudiar regresion lineal y sus algoritmos.
-- Estudiar especificamente el algoritmo "GLMNET" , ver ejemplos , ver sus parametros , aprender como funciona.
-- Repasar el funcionamiento del algoritmo "Centroide mas cercano".
-- Evaluar el dataset dado.
-- Probar ambos algoritmos para tener un punto de partida.
-- Comenzar a investigar y evaluar los resultados dados , hacer anotaciones, sacar conclusiones.
-- Si se pudiera , considerar mejoras , evaluando el algoritmo del "Centroide mas cercano mejorado".
-- Elaborar el informe final.
-- Entregar el trabajo y aprobar.
+- Actividad 1: Buscar/recolectar bibliografia de los temas a tratar. [2 dias]
+- Actividad 2: Leer libro "Introduction to Statistical Learning" capitulos 3.1 y 6.1 y 6.2 para entender regresion lineal y sus algoritmos, ampliar informacion de ser necesario.[3 dias].
+- Actividad 3: Leer la bibliografia encontrada(respecto a los algoritmos) , analizar , buscar cada una de las cosas que no alcance a comprender con el material. [7 dias]
+- Actividad 4: Ver el algoritmo "GLMNET" , ver ejemplos , ver sus parametros , aprender como funciona,ver librerias, codigo.[2 dias]
+- Actividad 5: Ver el funcionamiento del algoritmo "Centroide mas cercano",parametros,librerias , codigo.[2 dias]
+- Actividad 6: Evaluar el dataset dado sobre los algoritmos.[4 dias]
+- Actividad 7: Recompilar datos.[4 dias]
+- Actividad 8: Evaluar los resultados dados , hacer anotaciones, sacar conclusiones.[3 dias]
+- Actividad 9: Elaborar el informe final.[6 dias]
+- Actividad 10: Entregar el trabajo.[primer o segunda fecha de diciembre]
+- Actividad opcional: En el caso de ir mas rapido de lo esperado , evaluar posibles mejoras al algoritmos (ej : centroide mas cercano MEJORADO) 
 
+![image](https://user-images.githubusercontent.com/82063987/139735305-fc26c3b9-7424-4575-8434-e951b6b82cc7.png)
+
+###### Bibliografia:
+
+https://en.wikipedia.org/wiki/Nearest_centroid_classifier
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC124443/
+https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/
+https://glmnet.stanford.edu/articles/glmnet.html

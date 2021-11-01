@@ -1,6 +1,6 @@
-### Trabajo Final Inteligencia Artificial I 
+# Trabajo Final Inteligencia Artificial I 
 
-#### TITULO : ALGORITMOS DE CLASIFICACIÓN PARA INFORMACIÓN GENETICA.
+## TITULO : ALGORITMOS DE CLASIFICACIÓN PARA INFORMACIÓN GENETICA.
 
 ##### Codigo: ACLASIGEN
 

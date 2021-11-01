@@ -55,3 +55,4 @@ https://en.wikipedia.org/wiki/Nearest_centroid_classifier
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC124443/
 https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/
 https://glmnet.stanford.edu/articles/glmnet.html
+https://web.stanford.edu/~hastie/ISLR2/ISLRv2_website.pdf

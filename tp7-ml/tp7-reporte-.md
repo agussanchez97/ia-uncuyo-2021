@@ -15,7 +15,7 @@ utilice algoritmo de Random Forest con 600 arboles.
 
 ### Descripción detallada del algoritmo propuesto
 
-Lo primero que realizamos es el 
+Lo primero que realizamos es el preprocesamiento (tratamiento de datos como mencione anteriomente 
 
 
 

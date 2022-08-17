@@ -4,8 +4,8 @@
 
 ##### Codigo: ACLASIGEN
 
-###### Alumna: Sanchez Lanza Agustina
-###### Legajo: 11549
+###### Alumna: Sanchez Lanza Agustina // Lucia Cairo
+###### Legajo: 11549 // Legajo: 13030
 
 
 #### Objetivo: 

@@ -16,8 +16,8 @@ El objetivo es probar distintos algoritmos para dado un dataset, encontrar el co
 
 Para cumplir con el objetivo he seleccionado 2 algoritmos distintos:
 
--Centroide mas cercano: es un modelo de clasificación que asigna a las observaciones la etiqueta de la clase de muestras de entrenamiento cuya media ( centroide ) está más cerca de la observación
--Glmnet: es un algoritmo de regresion lineal , que penaliza variables que considera menos importantes para el entrenamiento.
+- Centroide mas cercano: es un modelo de clasificación que asigna a las observaciones la etiqueta de la clase de muestras de entrenamiento cuya media ( centroide ) está más cerca de la observación
+- Glmnet: es un algoritmo de regresion lineal , que penaliza variables que considera menos importantes para el entrenamiento.
 
 Para abordar este problema , mi estrategia es entrenar un dataset compuesto por informacion genetica de 65 personas con ambos algoritmos y en base a eso obtener metricas , distinguir similutedes y diferencias y por ultimo con toda esa informaciòn decidir cual estima mejor mi problema y describir porque considero esto. 
 

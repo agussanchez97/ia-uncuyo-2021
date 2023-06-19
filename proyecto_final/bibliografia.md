@@ -14,3 +14,4 @@
 - Tutorial de aprendizaje automático - García, L. (2018). K-means en Python paso a paso. Aprende Machine Learning. Recuperado de https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/
 - Documentación oficial - Friedman, J., Hastie, T., & Tibshirani, R. (2019). Regularization Paths for Generalized Linear Models. Recuperado de https://glmnet.stanford.edu/articles/glmnet.html
 - Libro - James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). An Introduction to Statistical Learning with Applications in R (2nd ed.). Recuperado de https://web.stanford.edu/~hastie/ISLR2/ISLRv2_website.pdf
+- Documento centroide mas cercano: https://www.sciencedirect.com/topics/computer-science/nearest-centroid

@@ -6,11 +6,35 @@ library(ISLR)
 library(caret)
 # Cargar el dataset Khan
 data(Khan)
+
 # Separar los conjuntos de entrenamiento y prueba
 xtrain <- Khan$xtrain
 ytrain <- Khan$ytrain
 xtest <- Khan$xtest
 ytest <- Khan$ytest
+
+#---------------------------Distancia de Mahalanobis-------------------------------------#
+
+  # Calcular la matriz de covarianza del dataset
+  cov_matrix <- cov(t(xtrain))
+  
+  # Calcular la media de cada variable
+  means <- colMeans(t(xtrain))
+  
+  # Calcular la distancia de Mahalanobis para cada observacion
+  mahalanobis_dist <- mahalanobis(t(xtrain), center = means, cov = cov_matrix)
+  
+  # Establecer un umbral para identificar valores atipicos
+  threshold <- qchisq(0.95, df = ncol(xtrain))
+  
+  # Identificar los valores atipicos
+  outliers <- which(mahalanobis_dist > threshold)
+  
+  # Imprimir los Indices de los valores atipicos
+  print(outliers)
+
+#------------------------------------------------------------------------------------------#
+
 
 # Obtener las etiquetas de clase
 clases <- unique(ytrain)

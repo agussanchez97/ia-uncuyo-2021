@@ -6,11 +6,63 @@ library(ISLR)
 library(caret)
 # Cargar el dataset Khan
 data(Khan)
+
 # Separar los conjuntos de entrenamiento y prueba
 xtrain <- Khan$xtrain
 ytrain <- Khan$ytrain
 xtest <- Khan$xtest
 ytest <- Khan$ytest
+
+#---------------------------Distancia de Mahalanobis-------------------------------------#
+
+  # Calcular la matriz de covarianza del dataset
+  cov_matrix <- cov(t(xtrain))
+  
+  # Calcular la media de cada variable
+  means <- colMeans(t(xtrain))
+  
+  # Calcular la distancia de Mahalanobis para cada observacion
+  mahalanobis_dist <- mahalanobis(t(xtrain), center = means, cov = cov_matrix)
+  
+  # Establecer un umbral para identificar valores atipicos
+  threshold <- qchisq(0.95, df = ncol(xtrain))
+  
+  # Identificar los valores atipicos
+  outliers <- which(mahalanobis_dist > threshold)
+  
+  # Imprimir los Indices de los valores atipicos
+  print(outliers)
+
+#------------------------------------------------------------------------------------------#
+
+#-----------------------BUSCAR DESBALANCES-------------------------------------------------#
+  
+# Calcular el conteo de observaciones por clase
+class_counts <- table(ytrain)
+  
+# Mostrar el conteo de observaciones por clase
+print(class_counts)
+  
+# Calcular la proporción de observaciones por clase
+class_proportions <- prop.table(class_counts)
+  
+# Mostrar la proporción de observaciones por clase
+print(class_proportions)
+  
+# Ajustar el tamaño del área de trazado
+pdf("grafico.pdf", width = 10, height = 6)
+  
+# Ajustar los márgenes de la figura
+par(mar = c(5, 5, 4, 2) + 0.1)
+  
+# Graficar las proporciones de observaciones por clase
+barplot(class_proportions, main = "Distribución de Clases en el Dataset Khan", xlab = "Clase", ylab = "Proporción")
+  
+# Cerrar el archivo PDF
+dev.off()
+
+
+#-------------------------------------------------------------------------------------------------
 
 # Obtener las etiquetas de clase
 clases <- unique(ytrain)

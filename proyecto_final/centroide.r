@@ -35,6 +35,34 @@ ytest <- Khan$ytest
 
 #------------------------------------------------------------------------------------------#
 
+#-----------------------BUSCAR DESBALANCES-------------------------------------------------#
+  
+# Calcular el conteo de observaciones por clase
+class_counts <- table(ytrain)
+  
+# Mostrar el conteo de observaciones por clase
+print(class_counts)
+  
+# Calcular la proporción de observaciones por clase
+class_proportions <- prop.table(class_counts)
+  
+# Mostrar la proporción de observaciones por clase
+print(class_proportions)
+  
+# Ajustar el tamaño del área de trazado
+pdf("grafico.pdf", width = 10, height = 6)
+  
+# Ajustar los márgenes de la figura
+par(mar = c(5, 5, 4, 2) + 0.1)
+  
+# Graficar las proporciones de observaciones por clase
+barplot(class_proportions, main = "Distribución de Clases en el Dataset Khan", xlab = "Clase", ylab = "Proporción")
+  
+# Cerrar el archivo PDF
+dev.off()
+
+
+#-------------------------------------------------------------------------------------------------
 
 # Obtener las etiquetas de clase
 clases <- unique(ytrain)

@@ -25,13 +25,14 @@ xtest <- Khan$xtest
 ytest <- Khan$ytest
 
 # Entrenar el modelo GLMNET con validación cruzada
-cv_model <- cv.glmnet(xtrain, ytrain, family = "multinomial")
+model <- glmnet(xtrain, ytrain, family = "multinomial")
 
 # Obtener el valor óptimo de lambda
-lambda_min <- cv_model$lambda.min
+lambda_min <- model$lambda.min
 
 # Realizar predicciones en el conjunto de prueba
-predictions <- predict(glmnet_model, newx = xtest, s = lambda_min, type = "class")
+predictions <- predict(model, newx = xtest, s = lambda_min, type = "class")
+
 
 # Evaluar la precisión del modelo
 accuracy <- mean(predictions == ytest)

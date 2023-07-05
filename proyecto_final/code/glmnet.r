@@ -27,11 +27,8 @@ ytest <- Khan$ytest
 # Entrenar el modelo GLMNET con validación cruzada
 model <- glmnet(xtrain, ytrain, family = "multinomial")
 
-# Obtener el valor óptimo de lambda
-lambda_min <- model$lambda.min
-
 # Realizar predicciones en el conjunto de prueba
-predictions <- predict(model, newx = xtest, s = lambda_min, type = "class")
+predictions <- predict(model, newx = xtest, type = "class")
 
 
 # Evaluar la precisión del modelo
@@ -46,6 +43,3 @@ ytest <- factor(ytest, levels = unique(c(predictions, ytest)))
 confusionMatrix(predictions, ytest)
 cm <- confusionMatrix(predictions, ytest)
 print(cm)
-
-
-

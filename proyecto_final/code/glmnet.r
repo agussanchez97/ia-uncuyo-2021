@@ -28,10 +28,10 @@ ytest <- Khan$ytest
 alpha_values <- seq(0, 1, by = 0.1)
 print(alpha_values)
 
-# Crear una lista para almacenar los resultados de validación cruzada
+# Lista para almacenar los resultados
 results <- list()
 
-# Realizar validación cruzada para cada valor de alpha
+# Implementar el algoritmo de GLMNET para cada valor de alpha
 for (alpha in alpha_values) {
   model <- glmnet(xtrain, ytrain, family = "multinomial", alpha = alpha)
   results[[as.character(alpha)]] <- model
@@ -40,7 +40,6 @@ for (alpha in alpha_values) {
 # Obtener los resultados y encontrar el mejor valor de alpha
 best_accuracy <- -Inf
 best_alpha <- NULL
-
 for (alpha in alpha_values) {
   model <- results[[as.character(alpha)]]
   predictions <- predict(model, newx = xtest, type = "class")
@@ -51,7 +50,6 @@ for (alpha in alpha_values) {
     best_alpha <- alpha
   }
 }
-
 print(best_accuracy)
 print(best_alpha)
 # Entrenar el modelo GLMNET con el mejor valor de alpha

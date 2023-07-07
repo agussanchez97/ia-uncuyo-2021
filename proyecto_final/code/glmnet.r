@@ -17,12 +17,17 @@ library(pROC)
 
 # Cargar el dataset Khan
 data(Khan)
+str(Khan)
 
 # Separar los conjuntos de entrenamiento y prueba
 xtrain <- Khan$xtrain
 ytrain <- Khan$ytrain
 xtest <- Khan$xtest
 ytest <- Khan$ytest
+str(xtrain)
+str(ytrain)
+str(xtest)
+str(ytest)
 
 # Definir una secuencia de valores de lambda
 lambda_values <- 10^seq(-2, 2, by = 0.5)
@@ -70,3 +75,34 @@ ytest <- factor(ytest, levels = unique(c(predictions, ytest)))
 confusionMatrix(predictions, ytest)
 cm <- confusionMatrix(predictions, ytest)
 print(cm)
+
+# Otras metricas
+tp <- cm$table[2, 2]  # Verdaderos positivos
+fn <- cm$table[2, 1]  # Falsos negativos
+tn <- cm$table[1, 1]  # Verdaderos negativos
+fp <- cm$table[1, 2]  # Falsos positivos
+print(tp)
+print(fn)
+print(tn)
+print(fp)
+
+# Calcula la sensibilidad (recall)
+sensitivity <- tp / (tp + fn)
+print(sensitivity)
+
+# Calcula la especificidad
+specificity <- tn / (tn + fp)
+print(specificity)
+
+# Calcula la precisión
+precision <- tp / (tp + fp)
+print(precision)
+
+# Calcula el F1-score
+f1_score <- 2 * (precision * sensitivity) / (precision + sensitivity)
+print(f1_score)
+
+# Calcula la curva ROC
+roc <- roc(ytest, as.numeric(predictions))
+print(roc)
+plot(roc)

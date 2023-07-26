@@ -32,11 +32,50 @@ print(ytest) # vector num 20.
 frecuencias <- table(ytrain)
 print(frecuencias)
 
+# Variacion del parametro alpha --------------------------------------------------------------------------
+# Definir una secuencia de valores de alpha
+alpha_values <- seq(0, 1, by = 0.1)
+print(alpha_values)
+
+# Lista para almacenar los resultados
+results <- list()
+
+# Implementar el algoritmo de GLMNET para cada valor de alpha
+for (alpha in alpha_values) {
+  model <- glmnet(xtrain, ytrain, family = "multinomial", alpha = alpha)
+  results[[as.character(alpha)]] <- model
+}
+
+# Obtener los resultados y encontrar el mejor valor de alpha
+best_accuracy <- -Inf
+best_alpha <- NULL
+for (alpha in alpha_values) {
+  model <- results[[as.character(alpha)]]
+  predictions <- predict(model, newx = xtest, type = "class")
+  mean_accuracy <- mean(predictions == ytest)
+  print(mean_accuracy)
+  if (mean_accuracy > best_accuracy) {
+    best_accuracy <- mean_accuracy
+    best_alpha <- alpha
+  }
+}
+print(best_accuracy)
+print(best_alpha)
+
+# Entrenar el modelo GLMNET con el mejor valor de alpha
+best_model <- glmnet(xtrain, ytrain, family = "multinomial", alpha = best_alpha)
+
+# Realizar predicciones en el conjunto de prueba
+predictions <- predict(best_model, newx = xtest, type = "class")
+
+# ---------------------------------------------------------------------------------------------------------
+
+# Variacion del parametro standardize ---------------------------------------------------------------------
+model <- glmnet(xtrain, ytrain, family = "multinomial", standardize = FALSE)
+# ---------------------------------------------------------------------------------------------------------
+
 # Entrenar el modelo GLMNET
 model <- glmnet(xtrain, ytrain, family = "multinomial")
-
-# Variacion del parametro standardize -------------------------------------
-model <- glmnet(xtrain, ytrain, family = "multinomial", standardize = FALSE)
 
 # Realizar predicciones en el conjunto de prueba
 predictions <- predict(model, newx = xtest, type = "class")

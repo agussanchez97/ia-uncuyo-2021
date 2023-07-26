@@ -35,6 +35,9 @@ print(frecuencias)
 # Entrenar el modelo GLMNET
 model <- glmnet(xtrain, ytrain, family = "multinomial")
 
+# Variacion del parametro standardize -------------------------------------
+model <- glmnet(xtrain, ytrain, family = "multinomial", standardize = FALSE)
+
 # Realizar predicciones en el conjunto de prueba
 predictions <- predict(model, newx = xtest, type = "class")
 

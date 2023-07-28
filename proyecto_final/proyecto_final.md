@@ -380,6 +380,13 @@ El modelo ha alcanzado un recall del 100% en las clases 3, 2 y 4, lo que indica 
 
 ### Variación del cálculo del centroide
 
+### Balanceo de Clases con Pesos
+
+Entendiendo el problema de nuestro dataset, una solución que podía mejorar nuestro modelo era balancear las clases de modo tal que todas tuvieran la misma incumbencia a la hora de realizar predicciones. Sin embargo, esto no solucionó nuestro problema, dado que el dataset sigue siendo muy pequeño en cuanto a observaciones, por lo tanto  la clase desbalanceada tiene muy pocas muestras en comparación con las otras clases, incluso si se le asigna un peso mayor, las muestras no fueron suficientes para proporcionar información significativa para aprender patrones y relaciones en los datos; también había falta de representatividad, entonces las muestras de la clase desbalanceada no son representativas del problema real por lo tanto los pesos no ayudan a mejorar el rendimiento.
+
+El rendimiento continuó siendo el mismo del algoritmo sin mejoras 0.7 e incluso cuando los pesos eran muy grandes respecto a las otras clases, el algoritmo empezaba a fallar en las clases que si estaban balanceadas. A continuación adjuntamos algunos gráficos que ayudan a explicar la situación
+
+
 ...
 
 ## Algoritmo GLMNET

@@ -673,7 +673,15 @@ Al interpretar las métricas de precisión, sensibilidad, especificidad, etc., e
 
 ### Algoritmo centroide mas cercano
 
-....
+Analizando los resultados, podemos ver que no es un mal modelo, pero que es un clasificador para problemas mas generales, dado que nuestro desafio fue tener un dataset pequeño en cuanto a observaciones y a lo largo del experimiento fue con lo que mas lidiamos, porque tambien teniamos clases desbalanceadas que no pudimos ajustar con ninguno de los hiperparametros propuestos. En cuanto a metricas fueron buenas ya que con los ajustes logramos un 0.8 es decir un 80%, es decir el modelo predijo bastante bien las instancias y el margen de error no fue un número de instancias que por si solo no es significativo, pero teniendo en cuenta que hay 63 observaciones, la falla de solo 1 de ellas ya baja significativamente el rendimiento. 
+
+Realizamos muchas variaciones de hiperparametros, dentro de ellas, la variación del calculo de la distancia, dentro de las cuales solo elegimos 2 pero habia muchas más, sin embargo estudiando cada una de ellas, nos decidimos por Manhattan y Euclediana; realizar esta mejora, nos proporciono metricas mucho mejores que el modelo sin ajustes, ya que logramos un accuracy de 0.8 contra el 0.7 que habiamos obtenido en un primer momento.
+
+Otro de los ajustes que realizamos, fue variar el calculo del vector centroide para cada una de las clases, que hasta el momento lo habiamos realizado con la media, es decir el promedio de los valores y cambiamos a calcularlo con la mediana, sin embargo esto nos mantuvo el accuracy y disminuyo el recall, es decir  disminuyo la capacidad del modelo para identificar correctamente todas las instancias de una clase específica de entre todas las instancias que pertenecen a esa clase en el conjunto de datos.
+
+Por ultimo para ver el tema de desbalance de clases, decidimos asignarle un peso a cada clase, de manera tal, que las clases desbalanceadas tuvieran un mayor peso sobre las demas, lo cual no nos ayudo en el modelo y por el contrario en el tiempo, el modelo empezo a fallar en las clases que no estaban desbalanceadas. Por lo tanto, descartamos el ajuste totalmente. 
+
+Para concluir entendemos que 80% de rendimiento es un valor muy bueno, respecto a modelos por fuerza bruta o random, pero sabemos que existen modelos como GLMNET, que estan mas preparados para abordar este tipo de problemas y en los que se pueden variar muchos mas parametros que mejoren las predicciones.
 
 ### Algoritmo GLMNET
 
@@ -698,7 +706,16 @@ La precisión general del modelo GLMNET para el conjunto de datos Khan se presen
 
 ### Comparacion de ambos algoritmos
 
-...
+Después de realizar la comparación entre el algoritmo glmnet y el enfoque del centroide más cercano en el dataset genético Khan, podemos llegar a las siguientes conclusiones:
+
+El algoritmo glmnet, que es una técnica de regularización para problemas de clasificación multiclase, demostró un rendimiento superior en términos de precisión, recall y matriz de confusion, entre otras métricas de evaluación en el conjunto de prueba. Su capacidad para manejar múltiples clases y ajustar los coeficientes para reducir el sobreajuste o la complejidad del modelo ha demostrado ser beneficioso en el contexto del dataset Khan genético.
+El uso de regresión logística con regularización L1 y L2 en glmnet permite manejar características redundantes o poco relevantes en el modelo, lo que puede haber contribuido a su mejor rendimiento.
+
+Con respecto al enfoque del centroide más cercano puede ser útil para clasificar observaciones en función de su similitud con centroides representativos de cada clase, en este caso, no pudo igualar el rendimiento del algoritmo glmnet.Puede ser que las características del dataset Khan genético no sean adecuadamente representadas por la distancia euclidiana utilizada en el cálculo de las predicciones basadas en centroides, sin embargo se realizaron variaciones que no lograron superar a glmnet.
+Además, el desbalance de clases en el dataset afectó negativamente el rendimiento del enfoque del centroide más cercano, especialmente si las clases minoritarias no estaban bien representadas por sus centroides y agregar instancias no era una solución eficiente en este tipo de datos y podian llegar a sesgar el modelo.
+
+Es importante destacar que los resultados de la comparación pueden depender de varios factores, como la configuración de hiperparámetros, la cantidad y relevancia de características en el dataset, el tamaño del conjunto de entrenamiento y prueba, entre otros. El rendimiento de los algoritmos puede variar según el problema específico y la naturaleza de los datos, por lo que es necesario realizar una evaluación exhaustiva y ajustar los modelos adecuadamente para cada c.
+En conclusión, el algoritmo glmnet demostró ser más efectivo y adecuado para el dataset genético Khan en esta comparación particular. Sin embargo, siempre hay que recordar que cada algoritmo tiene sus ventajas y limitaciones, y la elección del enfoque adecuado depende de las características específicas del problema y los datos.
 
 # Conclusiones finales
 Observaciones finales sobre el tema y es muy importante indicar aquellas tareas o experimentos que 

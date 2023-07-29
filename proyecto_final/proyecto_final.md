@@ -350,7 +350,7 @@ Como primera variación, luego de definir 5 folds y comenzar con la validación 
 |            | Re | fe | ren | cia |
 |------------|---|---|---|---|
 | Predicción | 1 | 2 | 3 | 4 |
-| 1          | 5 | 9 | 9 | 4 |
+| 1          | 5 | 0 | 0 | 4 |
 | 2          | 0 | 6 | 0 | 0 |
 | 3          | 0 | 0 | 3 | 0 |
 | 4          | 0 | 0 | 0 | 2 |
@@ -379,6 +379,41 @@ El modelo ha alcanzado un recall del 100% en las clases 3, 2 y 4, lo que indica 
 | 1.0000000 | 1.0000000 | 1.0000000 | 0.5555556 |
 
 ### Variación del cálculo del centroide
+Otra variación que se podía realizar para intentar mejorar las métricas, era variar la forma de calcular el vector centroide para cada una de las clases, es decir, en vez de calcularlo con el promedio o media, calcularlo con la fórmula de mediana, que trae algunos beneficios como se mencionó en el marco teórico. Sin embargo para nuestro modelo, esto no nos benefició ya que no aumentó el rendimiento, simplemente quedo en 0.8, a demas el recall disminuyo un poco. A continuación, dejamos los datos obtenidos.
+
+**Matriz de confusión**
+
+|            | Re | fe | ren | cia |
+|------------|---|---|---|---|
+| Predicción | 1 | 2 | 3 | 4 |
+| 1          | 3 | 0 | 0 | 0 |
+| 2          | 0 | 6 | 1 | 0 |
+| 3          | 0 | 0 | 2 | 0 |
+| 4          | 0 | 0 | 3 | 5 |
+
+**Accuracy (Exactitud)**
+
+En este caso, el valor de Accuracy es 0.8, lo que significa que el 80% de las predicciones fueron correctas. 
+
+**Estadísticas generales**
+
+|            | Clase 1 | Clase 2 | Clase 3 | Clase 4 |
+|------------|---|---|---|---|
+| Sensitivy | 1.0000 | 1.0000 | 0.3333 | 1.0000 |
+| Specificity | 1.0000 | 0.9286 | 1.0000 | 0.8000 | 
+| Pos Pred Value | 1.0000 | 0.8571 | 1.0000 | 0.625 |
+| Neg Pred Value | 1.0000 | 1.0000 | 0.7778 | 1.0000 |
+| Prevalence | 0.1500 | 0.3000 | 0.3000 | 0.2500 |
+| Detection Rate | 0.1500 | 0.3000 | 0.1000 | 0.2500 |
+| Detection Prevalence | 0.1500 | 0.3500 | 0.1000 | 0.4000 |
+| Balanced Accuracy | 1.0000 | 0.9643 |  0.6667 | 0.9000 |
+
+La clase 3 y 4 alcanzaron un recall del 100%, mientras que la clase 4 disminuyo y la clase 1 aumento un poco su porcentaje de aciertos.
+
+|Clase 3 | Clase 2 | Clase 4 | Clase 1 |
+|---|---|---|---|
+| 1.0000000 | 0.8571429 | 1.0000000 |0.6250000 |
+
 
 ### Balanceo de Clases con Pesos
 

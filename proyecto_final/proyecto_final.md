@@ -719,9 +719,19 @@ En conclusión, el algoritmo glmnet demostró ser más efectivo y adecuado para 
 
 # Conclusiones finales
 
-Como conclusion del informe, entendemos que el tema abordado es muy importante para el area de invetigación, estas fueron solo algunas pocas pruebas que nos introducen en el tema, sin embargo hay muchas cosas para mejorar, se podrian haber probado otros algoritmos que nos ayuden a entender un poco más como mejorar el modelo. 
+En este informe, llevamos a cabo un análisis y discusión de resultados de dos algoritmos de clasificación aplicados al conjunto de datos genético "Khan". Los algoritmos evaluados fueron "Centroide más cercano" y "GLMNET".
 
-# Bibliograifa
+El enfoque del "Centroide más cercano" mostró ser decente para problemas más generales. A pesar de enfrentar un conjunto de datos pequeño y clases desbalanceadas, alcanzo una precisión del 80%, lo que es un resultado positivo. Realizamos variaciones en la distancia de cálculo y el vector centroide, pero no logro superar el rendimiento del algoritmo GLMNET.
+
+El algoritmo "GLMNET", por otro lado, mostró un rendimiento superior, alcanzando una precisión cercana al 100% con la variación adecuada de hiperparámetros. La estandarización de variables predictoras, la combinación de penalizaciones L1 y L2, y una regularización óptima (lambda) fueron factores clave para su rendimiento.
+
+Con la comparación entre ambos algoritmos concluimos que GLMNET supera al del Centroide más cercano en el dataset genético "Khan". Esto puede atribuirse a la capacidad de GLMNET para manejar múltiples clases y ajustar coeficientes, lo que le permite evitar el sobreajuste y mejorar la generalización del modelo.
+
+Destacamos que los resultados dependieron de varios factores, como la configuración de hiperparámetros y la naturaleza de los datos. La elección de un algoritmo para un problema debe basarse en una evaluación exhaustiva y ajustes adecuados para cada caso.
+
+En conclusión, este informe representa un primer paso en el estudio y análisis de algoritmos de clasificación para el conjunto especifico de datos "Khan". Aunque GLMNET fue efectivo en este contexto, queda abierta la posibilidad de explorar otros algoritmos y técnicas para seguir mejorando el modelo. Entendemos que el tema abordado es muy importante para el area de invetigación, estas fueron solo algunas pruebas que nos introducen en el tema, sin embargo hay muchas cosas para mejorar, se podrian haber probado otros algoritmos que nos ayuden a entender un poco más como mejorar el modelo. 
+
+# Bibliografia
 
 https://www.youtube.com/watch?v=MFXKcEeT-M0 - APRENDIZAJE SUPERVISADO: LINEAR REGRESSION - #5 Curso Introducción a Machine Learning
 https://www.youtube.com/watch?v=gfs5bp2j_bA - Regresión Lineal Simple (Parte 1)

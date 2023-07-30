@@ -421,8 +421,25 @@ Entendiendo el problema de nuestro dataset, una solución que podía mejorar nue
 
 El rendimiento continuó siendo el mismo del algoritmo sin mejoras 0.7 e incluso cuando los pesos eran muy grandes respecto a las otras clases, el algoritmo empezaba a fallar en las clases que si estaban balanceadas. A continuación adjuntamos algunos gráficos que ayudan a explicar la situación
 
+|Pesos_1 | Pesos_2 | Pesos_3 | Pesos_4 | Pesos_5 | Pesos_6 |
+|---|---|---|---|
+| (1,1,1,1) | (1.2,1,1.2,1) | (1.3,1,1.3,1) | (1.4,1,1.4,1) | (1.5,1,1.2,1) | (1.5,1,1.5,1) |
 
-...
+Tabla: pesos definidos para cada clase
+
+Accuracy
+
+![image](https://github.com/agussanchez97/ia-uncuyo-2021/assets/88351747/cb5e677e-89e1-41f1-8ab2-0d1b79d9f87f)
+
+Tabla: Representación grafica del Accuracy
+
+Recall
+
+![image](https://github.com/agussanchez97/ia-uncuyo-2021/assets/88351747/642f3fed-7c53-48bd-b255-633fe0083654)
+
+Tabla: Recall calculado para diferentes pesos
+
+Como podemos ver en las tablas presentadas, el accuracy y recall van disminuyendo con los ajustes de los pesos de las clases, es decir pierde rendimiento el algoritmo a medida que las clases desbalanceadas tienen mas peso, ya que al tener un conjunto de datos con pocas observaciones, la clases balanceadas comienzan a tener fallas, lo que hace que las métricas bajen y el modelo no pueda predecir con exactitud.
 
 ## Algoritmo GLMNET
 

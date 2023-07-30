@@ -718,4 +718,20 @@ Es importante destacar que los resultados de la comparación pueden depender de 
 En conclusión, el algoritmo glmnet demostró ser más efectivo y adecuado para el dataset genético Khan en esta comparación particular. Sin embargo, siempre hay que recordar que cada algoritmo tiene sus ventajas y limitaciones, y la elección del enfoque adecuado depende de las características específicas del problema y los datos.
 
 # Conclusiones finales
-Observaciones finales sobre el tema y es muy importante indicar aquellas tareas o experimentos que 
+
+Como conclusion del informe, entendemos que el tema abordado es muy importante para el area de invetigación, estas fueron solo algunas pocas pruebas que nos introducen en el tema, sin embargo hay muchas cosas para mejorar, se podrian haber probado otros algoritmos que nos ayuden a entender un poco más como mejorar el modelo. 
+
+# Bibliograifa
+
+https://www.youtube.com/watch?v=MFXKcEeT-M0 - APRENDIZAJE SUPERVISADO: LINEAR REGRESSION - #5 Curso Introducción a Machine Learning
+https://www.youtube.com/watch?v=gfs5bp2j_bA - Regresión Lineal Simple (Parte 1)
+https://www.youtube.com/watch?v=LDc1huDUla0 - Regresión Lineal Simple (Parte 2)
+capítulo 6.1 del libro "Introduction to Statistical Learning"
+Capítulo 6.2 del libro "Introduction to Statistical Learning"
+https://www.youtube.com/watch?v=n_565KlqbUM - Distancia de Mahalanobis
+https://www.sciencedirect.com/topics/computer-science/nearest-centroid - Nearest Centroid
+https://www.geeksforgeeks.org/ml-nearest-centroid-classifier/ - Información de centroide
+https://machinelearningmastery.com/nearest-shrunken-centroids-with-python/#:~:text=Nearest%20Centroids%20Algorithm,-Nearest%20Centroids%20is&text=The%20algorithm%20involves%20first%20summarizing,class)%20in%20the%20training%20set.
+
+
+

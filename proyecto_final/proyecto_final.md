@@ -422,7 +422,7 @@ Entendiendo el problema de nuestro dataset, una solución que podía mejorar nue
 El rendimiento continuó siendo el mismo del algoritmo sin mejoras 0.7 e incluso cuando los pesos eran muy grandes respecto a las otras clases, el algoritmo empezaba a fallar en las clases que si estaban balanceadas. A continuación adjuntamos algunos gráficos que ayudan a explicar la situación
 
 |Pesos_1 | Pesos_2 | Pesos_3 | Pesos_4 | Pesos_5 | Pesos_6 |
-|---|---|---|---|
+|---|---|---|---|---|---|
 | (1,1,1,1) | (1.2,1,1.2,1) | (1.3,1,1.3,1) | (1.4,1,1.4,1) | (1.5,1,1.2,1) | (1.5,1,1.5,1) |
 
 Tabla: pesos definidos para cada clase
@@ -751,13 +751,21 @@ En conclusión, este informe representa un primer paso en el estudio y análisis
 # Bibliografia
 
 https://www.youtube.com/watch?v=MFXKcEeT-M0 - APRENDIZAJE SUPERVISADO: LINEAR REGRESSION - #5 Curso Introducción a Machine Learning
+
 https://www.youtube.com/watch?v=gfs5bp2j_bA - Regresión Lineal Simple (Parte 1)
+
 https://www.youtube.com/watch?v=LDc1huDUla0 - Regresión Lineal Simple (Parte 2)
+
 capítulo 6.1 del libro "Introduction to Statistical Learning"
+
 Capítulo 6.2 del libro "Introduction to Statistical Learning"
+
 https://www.youtube.com/watch?v=n_565KlqbUM - Distancia de Mahalanobis
+
 https://www.sciencedirect.com/topics/computer-science/nearest-centroid - Nearest Centroid
+
 https://www.geeksforgeeks.org/ml-nearest-centroid-classifier/ - Información de centroide
+
 https://machinelearningmastery.com/nearest-shrunken-centroids-with-python/#:~:text=Nearest%20Centroids%20Algorithm,-Nearest%20Centroids%20is&text=The%20algorithm%20involves%20first%20summarizing,class)%20in%20the%20training%20set.
 
 

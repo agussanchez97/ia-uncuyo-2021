@@ -698,6 +698,12 @@ Otro de los ajustes que realizamos, fue variar el calculo del vector centroide p
 
 Por ultimo para ver el tema de desbalance de clases, decidimos asignarle un peso a cada clase, de manera tal, que las clases desbalanceadas tuvieran un mayor peso sobre las demas, lo cual no nos ayudo en el modelo y por el contrario en el tiempo, el modelo empezo a fallar en las clases que no estaban desbalanceadas. Por lo tanto, descartamos el ajuste totalmente. 
 
+| Modelo    | Precicion     |
+|------------|-------------|
+| Centroide | 0,70 |
+| Centroide con variacion de la distancia | 0,80 |
+| Centroide con variacion de numero de centroides | 0,80 |
+
 Para concluir entendemos que 80% de rendimiento es un valor muy bueno, respecto a modelos por fuerza bruta o random, pero sabemos que existen modelos como GLMNET, que estan mas preparados para abordar este tipo de problemas y en los que se pueden variar muchos mas parametros que mejoren las predicciones.
 
 ### Algoritmo GLMNET
@@ -708,7 +714,7 @@ En la primera ejecución del algoritmo GLMNET con los parámetros por defecto, o
 
 Luego, realizamos una variación del parámetro standardize para decidir si estandarizar las variables predictoras antes de ajustar el modelo. Encontramos que la estandarización mejoraba el rendimiento del modelo, ya que sin ella la precicion del modelo bajaba a 89%. Esto nos sugirió que la estandarización de las variables predictoras es beneficiosa y ayuda al modelo a tener un mejor rendimiento al evitar que las variables con escalas más grandes dominen las variables con escalas más pequeñas.
 
-Posteriormente, variamos el parámetro alpha, que controla la mezcla entre la penalización L1 (LASSO) y L2 (Ridge). Observamos que el mejor valor de `alpha` para este problema de clasificación multiclase fue 0.7 ya que el modelo alcanzó una precisión del 93.8%. Esto indica que la combinación de las penalizaciones L1 y L2 en una proporción determinada (0.7 de L1 y 0.3 de L2) fue la más adecuada para el conjunto de datos. Que el modelo funcione mejor con una mayor proporción de penalización L1 nos suguiere que se beneficia de la selección de características y la reducción del número de coeficientes utilizados, ya que la penalización L1 hace que el modelo tienda a seleccionar un menor número de características más relevantes y descartar aquellas que contribuyen menos a la predicción. También se debe a que es mejor L1 cuando hay escasez de datos ya que reduce el riesgo de sobreajuste y puede simplificar el modelo, evitando el uso excesivo de características.
+Posteriormente, variamos el parámetro alpha, que controla la mezcla entre la penalización L1 (LASSO) y L2 (Ridge). Observamos que el mejor valor de alpha para este problema de clasificación multiclase fue 0.7 ya que el modelo alcanzó una precisión del 93.8%. Esto indica que la combinación de las penalizaciones L1 y L2 en una proporción determinada (0.7 de L1 y 0.3 de L2) fue la más adecuada para el conjunto de datos. Que el modelo funcione mejor con una mayor proporción de penalización L1 nos suguiere que se beneficia de la selección de características y la reducción del número de coeficientes utilizados, ya que la penalización L1 hace que el modelo tienda a seleccionar un menor número de características más relevantes y descartar aquellas que contribuyen menos a la predicción. También se debe a que es mejor L1 cuando hay escasez de datos ya que reduce el riesgo de sobreajuste y puede simplificar el modelo, evitando el uso excesivo de características.
 
 Finalmente, variamos el parámetro lambda, que regula la fuerza de la penalización y controla el grado de regularización del modelo. Encontramos que el mejor valor de lambda fue 0.01, lo que resultó en una precisión del 100%. Esto significa que este valor de lambda proporcionó la cantidad justa de regularización para que el modelo generalizara bien a nuevos datos. Un valor más alto penalizaba demasiado los coeficientes, reduciendo la capacidad del modelo para ajustarse a los datos de entrenamiento.
 
@@ -731,7 +737,17 @@ El uso de regresión logística con regularización L1 y L2 en glmnet permite ma
 Con respecto al enfoque del centroide más cercano puede ser útil para clasificar observaciones en función de su similitud con centroides representativos de cada clase, en este caso, no pudo igualar el rendimiento del algoritmo glmnet.Puede ser que las características del dataset Khan genético no sean adecuadamente representadas por la distancia euclidiana utilizada en el cálculo de las predicciones basadas en centroides, sin embargo se realizaron variaciones que no lograron superar a glmnet.
 Además, el desbalance de clases en el dataset afectó negativamente el rendimiento del enfoque del centroide más cercano, especialmente si las clases minoritarias no estaban bien representadas por sus centroides y agregar instancias no era una solución eficiente en este tipo de datos y podian llegar a sesgar el modelo.
 
+A continuacion mostramos una tabla para comparar visualmente las preciciones alcanzadas por ambos algoritmos.
+
+| Modelo    | Precicion     |
+|------------|-------------|
+| Centroide mas cercano | 0,70 |
+| Centroide mas cercano mejorado | 0,80 |
+| Algortimo GLMNET | 0,93 |
+| Algortimo GLMNET mejorado | 1 |
+
 Es importante destacar que los resultados de la comparación pueden depender de varios factores, como la configuración de hiperparámetros, la cantidad y relevancia de características en el dataset, el tamaño del conjunto de entrenamiento y prueba, entre otros. El rendimiento de los algoritmos puede variar según el problema específico y la naturaleza de los datos, por lo que es necesario realizar una evaluación exhaustiva y ajustar los modelos adecuadamente para cada c.
+
 En conclusión, el algoritmo glmnet demostró ser más efectivo y adecuado para el dataset genético Khan en esta comparación particular. Sin embargo, siempre hay que recordar que cada algoritmo tiene sus ventajas y limitaciones, y la elección del enfoque adecuado depende de las características específicas del problema y los datos.
 
 # Conclusiones finales

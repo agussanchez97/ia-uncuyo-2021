@@ -9,7 +9,7 @@
 
 # Introducción 
 
-En el presente informe se aborda un problema de inteligencia artificial, específicamente en el campo del aprendizaje automático y ciencia de datos. Nuestro objetivo es probar dos algoritmos (GLMNET y Centroide más cercano) y crear un modelo de clasificación, para que dado un dataset y de acuerdo con las características genéticas que tenga el mismo, se pueda predecir el tipo de cáncer que puede llegar a desarrollar un individuo.
+En el presente informe se aborda un problema de *inteligencia artificial*, específicamente en el campo del aprendizaje automático y ciencia de datos. Nuestro objetivo es probar dos algoritmos (GLMNET y Centroide más cercano) y crear un *modelo de clasificación*, para que dado un dataset y de acuerdo con las características genéticas que tenga el mismo, se pueda distinguir cuatro tipos distintos de tumores, de acuerdo a muestras de tejido genicas.
 
 Los inconvenientes se encuentran en la dificultad de clasificar los datos correctamente, dado que los dataset genéticos se caracterizan por ser escasos de observaciones, lo que limita la capacidad de los modelos para generalizar. La falta de información suficiente puede afectar la precisión y la capacidad predictiva de los algoritmos y generar, por ejemplo, falsos positivos o falsos negativos.
 
@@ -26,7 +26,7 @@ Como se menciona anteriormente, abordamos un problema de clasificación en el ca
 
 ## Centroide más cercano
 
-El clasificador de centroide más cercano (Nearest Centroid) es uno de los clasificadores más infravalorados y utilizado en el aprendizaje automático. Sin embargo, es bastante potente y muy eficiente para ciertas tareas de clasificación de Machine Learning. El clasificador Nearest Centroid es algo similar al clasificador K-Nearest Neighbors, la diferencia principal es que centroide más cercano se concentra en encontrar el centro de cada clase/etiqueta y clasificar nuevos puntos basándose en la distancia al centroide, mientras que KNN clasifica los puntos basándose en la mayoría de las "K" instancias más cercanas en el espacio de características sin un paso explícito de entrenamiento. 
+El *clasificador de centroide más cercano* (Nearest Centroid) es uno de los clasificadores más infravalorados y utilizado en el aprendizaje automático. Sin embargo, es bastante potente y muy eficiente para ciertas tareas de clasificación de Machine Learning. El clasificador Nearest Centroid es algo similar al clasificador K-Nearest Neighbors, la diferencia principal es que centroide más cercano se concentra en encontrar el centro de cada clase/etiqueta y clasificar nuevos puntos basándose en la distancia al centroide, mientras que KNN clasifica los puntos basándose en la mayoría de las "K" instancias más cercanas en el espacio de características sin un paso explícito de entrenamiento. 
 
 El clasificador de centroide más cercano se puede explicar simplemente en 3 pasos: 
  
@@ -251,13 +251,13 @@ by Harpo MAxx
 
 Debido a que no existe ninguna librería que tenga el algoritmo del centroide más cercano implementado y se pueda utilizar de manera automática, fue necesario desarrollar nuestro propio algoritmo en base a las definiciones mencionadas en la teoría.
 
-Para esto luego de realizar la división del dataset, trabajamos con el conjunto de prueba, como podemos visualizar en la imagen 5, en la línea 15 obtenemos las clases del vector ytrain que contiene 4 etiquetas que corresponden a los 4 tipos de cáncer. Luego en la línea 20 definimos el vector centroides que guardara los 4 centroides que se calculan en el bucle for de la línea 23, en esta primera instancia fue calculado con la fórmula de la media o promedio de las variables. En la línea 37 comienza el bucle anidado para calcular la matriz distancias con el conjunto de pruebas, para finalmente asignarle una clase de acuerdo a la distancia al centroide más cercano.
+Para esto luego de realizar la división del dataset, trabajamos con el conjunto de prueba, como podemos visualizar en la imagen 5, en la línea 15 obtenemos las clases del vector ytrain que contiene 4 etiquetas que corresponden a los 4 tipos de cáncer. Luego en la línea 20 definimos el vector "centroides" que guardara los 4 centroides que se calculan en el bucle for de la línea 23, en esta primera instancia fue calculado con la fórmula de la media o promedio de las variables. En la línea 37 comienza el bucle anidado para calcular la matriz distancias con el conjunto de pruebas, para finalmente asignarle una clase de acuerdo a la distancia al centroide más cercano.
 
 ![image](https://github.com/agussanchez97/ia-uncuyo-2021/assets/88351747/f1757aae-cdee-47cd-8746-d4057818ce04)
 
 Imagen 7: porción de código del algoritmo del centroide más cercano sin mejoras
 
-Por último se calculan las predicciones, evaluando la clase calculada con el vector ytest que es la clase real. Esto se puede visualizar en la linea 44, la variable clases_predichas, con la que luego en la linea 50 de la imagen 6, se calcula la matriz de confusión.
+Por último se calculan las predicciones, evaluando la clase calculada con el vector ytest que es la clase real. Esto se puede visualizar en la linea 44, la variable "clases_predichas", con la que luego en la linea 50 de la imagen 6, se calcula la "matriz de confusión".
 
 ![image](https://github.com/agussanchez97/ia-uncuyo-2021/assets/88351747/df1e8416-5702-47c1-9936-ebe6983082fe)
 

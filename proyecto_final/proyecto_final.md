@@ -176,19 +176,19 @@ En resumen, GLMNET es un algoritmo importante en el campo de la regresión y cla
 
 Para comenzar con el desarrollo, cabe destacar que el lenguaje de programación principal que utilizamos es R, ya que consideramos que es muy utilizado en el campo de la inteligencia artificial y fue provisto por la cátedra. 
 
-Para adentrarnos en los temas, comenzaremos explicando el dataset utilizado a lo largo del experimento, el mismo se llama Khan y fue tomado del libro "An Introduction to Statistical Learning with application in R"( ISLR ). Este libro brinda una introducción a los conceptos fundamentales de aprendizaje estadístico y su implementación en R.
+Para adentrarnos en los temas, comenzaremos explicando el dataset utilizado a lo largo del experimento, el mismo se llama "Khan" y fue tomado del libro "An Introduction to Statistical Learning with application in R"( ISLR ). Este libro brinda una introducción a los conceptos fundamentales de aprendizaje estadístico y su implementación en R.
 
-El conjunto de datos Khan, está disponible en el paquete ISLR de R, el cual contiene varios conjuntos de datos utilizados en el libro. Para poder utilizar el mismo, fue necesario importar la librería en nuestro modelo.
+El conjunto de datos "Khan", está disponible en el paquete "ISLR" de R, el cual contiene varios conjuntos de datos utilizados en el libro. Para poder utilizar el mismo, fue necesario importar la librería en nuestro modelo.
 
 Como primer paso, consideramos que entender los datos y realizar un correcto preprocesamiento de los mismos es fundamental para poder tratarlos y encontrar un patrón de comportamiento adecuado. Por lo tanto, es necesario explicar el conjunto de datos, dado que esto nos ayudará a entender más adelante los resultados obtenidos. 
 
-Entonces, Khan es un dataset pequeño, en cuanto a número de observaciones, ya que solo cuenta con 63, sin embargo, tiene 2308 variables, lo cual es un número muy grande de características para analizar, como mencionamos anteriormente esto es una característica muy común en información genética. Además, el dataset cuenta con un vector de 63 etiquetas que corresponden a los 4 tipos de cánceres. 
+Entonces, "Khan" es un dataset pequeño, en cuanto a número de observaciones, ya que solo cuenta con 63, sin embargo, tiene 2308 variables, lo cual es un número muy grande de características para analizar, como mencionamos anteriormente esto es una característica muy común en información genética. Además, el dataset cuenta con un vector de 63 etiquetas que corresponden a los 4 tipos de tumores. 
 
-En cuanto al preprocesamiento, estudiamos uno de los puntos críticos que es el balanceo de clases, para esto analizamos la proporción de las mismas. Por otra parte, buscamos si el dataset tenía valores anómalos o extremos que nos pudieran generar algún problema a la hora de predecir. A continuación, pasamos a detallar ambos procedimientos y los resultados obtenidos.
+En cuanto al preprocesamiento, estudiamos uno de los puntos críticos que es el balanceo de clases, para esto analizamos la proporción de las mismas. Por otra parte, buscamos si el dataset tenía "valores anómalos" o "extremos" que nos pudieran generar algún problema a la hora de predecir. A continuación, pasamos a detallar ambos procedimientos y los resultados obtenidos.
 
 ### Balanceo de clases
    
-Para determinar si las clases del dataset Khan están balanceadas, analizamos las proporciones de observaciones por clase. En este caso, las proporciones son las siguientes:
+Para determinar si las clases del dataset "Khan" están balanceadas, analizamos las proporciones de observaciones por clase. En este caso, las proporciones son las siguientes:
 
 * Clase 1: 0.1269841
 * Clase 2: 0.3650794
@@ -199,11 +199,11 @@ Para determinar si las clases del dataset Khan están balanceadas, analizamos la
 
 Imagen 3: balance de clases del dataset Khan
 
-Pudimos notar que la Clase 2 tiene la proporción más alta (0.3650794), mientras que la Clase 1 tiene la proporción más baja (0.1269841). Esto sugiere cierto desbalance en las clases.
+En la *imagen 3* podemos notar que la Clase 2 tiene la proporción más alta (0.3650794), mientras que la Clase 1 tiene la proporción más baja (0.1269841). Esto sugiere cierto desbalance en las clases.
 
 ### Valores anómalos o extremos.
 
-Para realizar este procedimiento decidimos utilizar el método de Mahalanobis, donde el objetivo en si, es calcular la distancia de Mahalanobis de cada uno de los puntos e ir clasificando, primeramente explicaremos el método de manera teórica y luego la implementación. 
+Para realizar este procedimiento decidimos utilizar el *método de Mahalanobis*, donde el objetivo en si, es calcular la distancia de Mahalanobis de cada uno de los puntos e ir clasificando, primeramente explicaremos el método de manera teórica y luego la implementación. 
 
 **Método de Mahalanobis**
 
@@ -222,17 +222,17 @@ Donde:
 
 Imagen 4: porción de codigo tomado de la implementación propuesta
 
-En la imagen 4 línea 20 podemos observar como se  calcula la matriz de covarianza del conjunto de entrenamiento usando la función cov. La función t se utiliza para transponer la matriz xtrain y asegurarse de que las variables estén en las columnas y las observaciones en las filas. Luego en la línea 24 se calcula la media de cada variable utilizando la función colMeans. De nuevo, se transpone la matriz xtrain con la función t para que las variables estén en las columnas.
+En la *imagen 4* línea 20 podemos observar como se  calcula la matriz de covarianza del conjunto de entrenamiento usando la función "cov". La función "t" se utiliza para transponer la matriz xtrain y asegurarse de que las variables estén en las columnas y las observaciones en las filas. Luego, en la línea 24, se calcula la media de cada variable utilizando la función "colMeans". De nuevo, se transpone la matriz xtrain con la función "t" para que las variables estén en las columnas.
 
-Utilizamos la función Mahalanobis para calcular la distancia de Mahalanobis para cada observación en el conjunto de entrenamiento esto se visualiza en la línea 27 Se proporcionan los siguientes argumentos:
+Utilizamos la función "Mahalanobis" para calcular la distancia de Mahalanobis para cada observación en el conjunto de entrenamiento esto se visualiza en la línea 27; se proporcionan los siguientes argumentos:
 
 t(xtrain): La matriz de datos transpuesta.
 center = means: El vector de medias calculado anteriormente.
 cov = cov_matrix: La matriz de covarianza calculada anteriormente.
 
-Establecemos un umbral para identificar valores atípicos. En este caso, utilizamos el cuantil 0.95 de la distribución chi-cuadrado con grados de libertad igual al número de variables en el conjunto de entrenamiento. Esto se realiza con la función qchisq.
+Establecemos un umbral para identificar valores atípicos. En este caso, utilizamos el cuantil 0.95 de la distribución chi-cuadrado con grados de libertad igual al número de variables en el conjunto de entrenamiento. Esto se realiza con la función "qchisq".
 
-Finalmente, se utiliza la función which para identificar los índices de las observaciones que tienen una distancia de Mahalanobis mayor que el umbral establecido. Estos índices se almacenan en la variable outliers.
+Finalmente, se utiliza la función "which" para identificar los índices de las observaciones que tienen una distancia de Mahalanobis mayor que el umbral establecido. Estos índices se almacenan en la variable "outliers".
 
 Concluimos imprimiendo los datos y los resultados obtenidos fueron que no hay valores anómalos, ni extremos de acuerdo al umbral fijado.
 
@@ -251,7 +251,7 @@ by Harpo MAxx
 
 Debido a que no existe ninguna librería que tenga el algoritmo del centroide más cercano implementado y se pueda utilizar de manera automática, fue necesario desarrollar nuestro propio algoritmo en base a las definiciones mencionadas en la teoría.
 
-Para esto luego de realizar la división del dataset, trabajamos con el conjunto de prueba, como podemos visualizar en la imagen 5, en la línea 15 obtenemos las clases del vector ytrain que contiene 4 etiquetas que corresponden a los 4 tipos de cáncer. Luego en la línea 20 definimos el vector "centroides" que guardara los 4 centroides que se calculan en el bucle for de la línea 23, en esta primera instancia fue calculado con la fórmula de la media o promedio de las variables. En la línea 37 comienza el bucle anidado para calcular la matriz distancias con el conjunto de pruebas, para finalmente asignarle una clase de acuerdo a la distancia al centroide más cercano.
+Para esto luego de realizar la división del dataset, trabajamos con el conjunto de prueba, como podemos visualizar en la *imagen 7*, en la línea 15 obtenemos las clases del vector ytrain que contiene 4 etiquetas que corresponden a los 4 tipos de cáncer, con la función "unique". Luego en la línea 20, definimos el vector "centroides" que guardara los 4 centroides que se calculan en el bucle for de la línea 23, en esta primera instancia fue calculado con la fórmula de la media o promedio de las variables, con la función "colmeans". En la línea 37, comienza el bucle anidado para calcular la matriz distancias con el conjunto de pruebas, para finalmente asignarle una clase de acuerdo a la distancia al centroide más cercano.
 
 ![image](https://github.com/agussanchez97/ia-uncuyo-2021/assets/88351747/f1757aae-cdee-47cd-8746-d4057818ce04)
 
@@ -263,7 +263,7 @@ Por último se calculan las predicciones, evaluando la clase calculada con el ve
 
 Imagen 8: porción de código del calculo de metricas
 
-De este primer experimento obtuvimos resultados muy satisfactorios que se pueden visualizar en la Tabla 1, teniendo en cuenta que al algoritmo no se le realizó ningún ajuste de hiperparametros y aun asi se obtuvo una exactitud del 70%, lo que posiciona al modelo en un lugar mucho mejor que la resolución por algoritmos como random o fuerza bruta.
+De este primer experimento obtuvimos resultados muy satisfactorios que se pueden visualizar en la *Tabla 1*, teniendo en cuenta que al algoritmo no se le realizó ningún ajuste de hiperparametros y aun asi se obtuvo una exactitud del 70%, lo que posiciona al modelo en un lugar mucho mejor que la resolución por algoritmos como random o fuerza bruta.
 
 Tenemos que tener en cuenta, que es un dataset pequeño y muy desbalanceado por lo tanto, depende como se dividan los datos y que cantidad de observaciones del conjunto de prueba pertenecen a las clases desbalanceadas, eso nos da una idea del rendimiento del mismo, ya que por razones obvias, el modelo va a tener problemas para predecir clases con pocas observaciones en el entrenamiento.
 
@@ -328,7 +328,7 @@ El recall promedio 0.82 es decir 82% de las observaciones positivas fueron predi
 
 ### Validación Cruzada
 
-Como podemos ver, uno de los mayores problema del conjunto de datos elegido es que es muy pequeño en cuanto a cantidad de observaciones, por lo tanto, utilizamos la técnica de validación cruzada, para poder evaluar los hiperparametros mencionados anteriormente y así poder proponer mejoras en el modelo. 
+Como podemos ver, uno de los mayores problema del conjunto de datos elegido es que es muy pequeño en cuanto a cantidad de observaciones, por lo tanto, utilizamos la técnica de validación cruzada, para poder evaluar los hiperparametros mencionados anteriormente y así poder proponer mejoras en el modelo. Debido a que el algoritmo del centroide mas cercano, no es un modelo que se encuentre en una libreria, fue necesario codear tambien la validación cruzada.
 
 Para comenzar, explicaremos brevemente, que es. La validación cruzada es una técnica estadística utilizada para evaluar el rendimiento y la generalización de un modelo de machine learning. También se utiliza para obtener los hiperparámetros óptimos de un modelo, en nuestro caso, la utilizaremos para esto. El proceso típico para obtener los hiperparámetros mediante validación cruzada es el siguiente:
 
@@ -343,7 +343,7 @@ Este enfoque permite evitar el sobreajuste y obtener hiperparámetros que produz
 
 ### Variación de la distancia
 
-Como primera variación, luego de definir 5 folds y comenzar con la validación cruzada, decidimos probar distancia euclidiana y manhattan para evaluar cual de los dos comportamientos era mejor a la hora de predecir, para esto guardamos ambos accuracy por cada fold y al final del bucle, luego de recorrer los 5 folds, se calculo un accuracy promedio para Manhattan y para Euclidiana y toma la que tenga un mejor rendimiento, que en nuestro caso fue Euclidiana, luego se utiliza esa distancia para predecir el conjunto prueba definido al comienzo, con esto mejoramos mucho el rendimiento del modelo. Las matriz de confusión y demas metricas se pueden visualizar en la tabla 2, tabla 3 y tabla 4; no hay que olvidar que el rendimiento depende mucho de la división en conjunto train y test que se hace en un comienzo, ya que al tener un conjunto de datos desbalanceados, el modelo baja su rendimiento cuando en el conjunto prueba contiene muchas instancias de las clases desbalanceadas.
+Como primera variación, luego de definir 5 folds y comenzar con la validación cruzada, decidimos probar distancia euclidiana y manhattan para evaluar cual de los dos comportamientos era mejor a la hora de predecir, para esto guardamos ambos accuracy por cada fold y al final del bucle, luego de recorrer los 5 folds, se calculo un accuracy promedio para Manhattan y para Euclidiana y toma la que tenga un mejor rendimiento, que en nuestro caso fue Euclidiana, luego se utiliza esa distancia para predecir el conjunto prueba definido al comienzo, con esto mejoramos mucho el rendimiento del modelo. Las "matriz de confusión" y demas metricas se pueden visualizar en la tabla 2, tabla 3 y tabla 4; no hay que olvidar que el rendimiento depende mucho de la división en conjunto train y test que se hace en un comienzo, ya que al tener un conjunto de datos desbalanceados, el modelo baja su rendimiento cuando en el conjunto prueba contiene muchas instancias de las clases desbalanceadas.
 
 **Matriz de confusión**
 
@@ -443,7 +443,7 @@ Como podemos ver en las tablas presentadas, el accuracy y recall van disminuyend
 
 ## Algoritmo GLMNET
 
-Implementamos el algoritmo GLMNET en R, con el dataset Khan, sin ajustar el modelo, es decir, sin variar los posibles parámetros, utilizando los predeterminados. 
+Implementamos el algoritmo GLMNET en R, con el dataset "Khan", sin ajustar el modelo, es decir, sin variar los posibles parámetros, utilizando los predeterminados. 
 
 Para esto, en el código en R primero se instalan los paquetes necesarios y luego se cargan. También se carga el conjunto de datos "Khan" el cual se separa en conjuntos de entrenamiento (xtrain y ytrain) y de prueba (xtest y ytest). Luego para el entrenamiento del modelo GLMNET tenemos la línea:
 
